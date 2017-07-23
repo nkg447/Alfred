@@ -20,6 +20,9 @@ After the maven build execute the install.sh file to install Alfred
 chmod 777 install.sh
 ./install.sh
 ```
+#### How To Use : 
+see HowToUse.md
+
 ## Built With
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [JCommander](jcommander.org) - Parse Command Line Parameters
