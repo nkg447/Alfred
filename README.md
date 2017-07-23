@@ -21,7 +21,13 @@ chmod 777 install.sh
 ./install.sh
 ```
 #### How To Use : 
-see HowToUse.md
+see [HOW_TO_USE.md](https://github.com/nkg447/Alfred/blob/master/HOW_TO_USE.md)
+
+## Language Supported 
+* JAVA
+* C++
+* PYTHON
+* C
 
 ## Built With
 * [Maven](https://maven.apache.org/) - Dependency Management
