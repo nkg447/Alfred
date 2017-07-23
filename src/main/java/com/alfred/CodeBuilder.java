@@ -1,63 +1,32 @@
 package com.alfred;
 
-import java.io.IOException;
 
 /*
  * A class that compiles the c , cpp , java code
  */
 public class CodeBuilder {
 	static int build(CodeFileInfo info) {
+		String statement = null;
+		if (info.getLanguage().equals("java")) {
+			statement = "javac " + info.getFilePath();
+			
+		} else if (info.getLanguage().equals("cpp")) {
+			statement = "g++ " + info.getFilePath();
 
-		if (info.getLanguage().equals("java"))
-			return javaBuild(info);
-		else if (info.getLanguage().equals("cpp"))
-			return cppBuild(info);
-		else if (info.getLanguage().equals("c"))
-			return cBuild(info);
+		} else if (info.getLanguage().equals("c")) {
+			statement = "gcc " + info.getFilePath();
+
+		}
+		else
+			return 0;
+		try {
+			
+			return ProcessExecutor.runProcess(statement);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return 0;
 	}
 
-	private static int cBuild(CodeFileInfo info) {
-		String statement = "gcc " + info.getFilePath();
-		try {
-			Process build = Runtime.getRuntime().exec(statement);
-			build.waitFor();
-			return build.exitValue();
-		} catch (IOException e) {
-			return -1;
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		return -1;
-	}
-
-	private static int cppBuild(CodeFileInfo info) {
-		String statement = "g++ " + info.getFilePath();
-		try {
-			Process build = Runtime.getRuntime().exec(statement);
-			build.waitFor();
-			return build.exitValue();
-		} catch (IOException e) {
-			return -1;
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		return -1;
-	}
-
-	private static int javaBuild(CodeFileInfo info) {
-
-		String statement = "javac " + info.getFilePath();
-		try {
-			Process build = Runtime.getRuntime().exec(statement);
-			build.waitFor();
-			return build.exitValue();
-		} catch (IOException e) {
-			return -1;
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
-		return -1;
-
-	}
 }
