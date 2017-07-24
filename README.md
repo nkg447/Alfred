@@ -4,7 +4,7 @@ Your own butler to run your code against test cases.<br />
 
 ## Download 
 Download the pre - build software -> [click here](https://sourceforge.net/projects/nkg447-alfred/) <br/>
-**current working version for ubuntu users only*
+**Current working version for unix based Operating Systems only*
 
 ## Getting Started
 These instructions will help you get the project up and running on your local machine for development and testing purposes.
