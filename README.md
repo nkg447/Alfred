@@ -3,7 +3,7 @@ Your own butler to run your code against test cases.<br />
 <img src="https://vignette1.wikia.nocookie.net/batman/images/2/2c/Batman_TAS_-_Alfred_Pennyworth.jpg/revision/latest?cb=20170629213713" width="100">
 
 ## Download 
-Download the pre - build software -> [click here](https://sourceforge.net/projects/nkg447-alfred/files/Alfred-0.0.1.tar.gz)
+Download the pre - build software -> [click here](https://sourceforge.net/projects/nkg447-alfred/)
 
 ## Getting Started
 These instructions will help you get the project up and running on your local machine for development and testing purposes.
