@@ -5,6 +5,8 @@ Your own butler to run your code against test cases.<br />
 ## Download 
 Download the pre - build software -> [click here](https://sourceforge.net/projects/nkg447-alfred/) <br/>
 **Current working version for unix based Operating Systems only*
+### How To Use : 
+see [HOW_TO_USE.md](https://github.com/nkg447/Alfred/blob/master/HOW_TO_USE.md)
 
 ## Getting Started
 These instructions will help you get the project up and running on your local machine for development and testing purposes.
@@ -25,8 +27,6 @@ pathToMavenFolder/bin/mvn install
 ```
 Usually the pathToMavenFolder is "/usr/share/maven/".
 
-### How To Use : 
-see [HOW_TO_USE.md](https://github.com/nkg447/Alfred/blob/master/HOW_TO_USE.md)
 
 ## Language Supported 
 * JAVA
