@@ -15,7 +15,7 @@ Install these softwares before going further -
 
 ### Installing
 #### Eclipse
-Import the project to eclipse and perform a maven build operation.
+Import the project to eclipse and perform a maven build operation with "install" as the goal.
 
 #### Terminal
 Execute the following commands to build the project.
