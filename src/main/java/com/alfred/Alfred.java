@@ -17,6 +17,13 @@ public class Alfred {
 
 	public static void main(String[] args) {
 		Arguments arg = Arguments.getInstance(args);
+		if(args.length==0)
+		{
+			System.err.println("no argument passed");
+			System.err.println("To see hoe to use visit the below link");
+			System.err.println("https://github.com/nkg447/Alfred/blob/master/HOW_TO_USE.md");
+			System.exit(0);
+		}
 		try {
 			CodeFileInfo codeInfo = CodeFileInfo.getCodeFileInfo(arg.code);
 			int exitCode = CodeBuilder.build(codeInfo);
