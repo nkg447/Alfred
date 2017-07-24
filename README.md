@@ -2,8 +2,11 @@
 Your own butler to run your code against test cases.<br />
 <img src="https://vignette1.wikia.nocookie.net/batman/images/2/2c/Batman_TAS_-_Alfred_Pennyworth.jpg/revision/latest?cb=20170629213713" width="100">
 
+## Download 
+Download the pre - build software -> [click here]()
+
 ## Getting Started
-These instructions will help you get the project up and running on your local machine.
+These instructions will help you get the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 Install these softwares before going further - 
@@ -11,17 +14,17 @@ Install these softwares before going further -
 * *MAVEN* to install -> [how to install](https://www.mkyong.com/maven/how-to-install-maven-in-ubuntu/)
 
 ### Installing
-Execute the following commands to install the project.
+#### Eclipse
+Import the project to eclipse and perform a maven build operation.
+
+#### Terminal
+Execute the following commands to build the project.
 ```
 pathToMavenFolder/bin/mvn install
 ```
-usually the pathToMavenFolder is "/usr/share/maven/".
-After the maven build execute the install.sh file to install Alfred
-```
-chmod 777 install.sh
-./install.sh
-```
-#### How To Use : 
+Usually the pathToMavenFolder is "/usr/share/maven/".
+
+### How To Use : 
 see [HOW_TO_USE.md](https://github.com/nkg447/Alfred/blob/master/HOW_TO_USE.md)
 
 ## Language Supported 
