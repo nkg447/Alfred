@@ -4,6 +4,7 @@ import com.beust.jcommander.JCommander;
 import com.beust.jcommander.Parameter;
 /*
  * A class used to store all the arguments.
+ * dependency : JCommander
  * @alfred
  * 
  */

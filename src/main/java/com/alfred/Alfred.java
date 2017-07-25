@@ -10,12 +10,13 @@ import java.util.Scanner;
  * 
  */
 
-public class Alfred {
+class Alfred {
 
 	private static Scanner expected;
 	private static Scanner out;
 
 	public static void main(String[] args) {
+		System.out.println(System.getProperty("user.dir"));
 		Arguments arg = Arguments.getInstance(args);
 		if(args.length==0)
 		{
@@ -43,7 +44,7 @@ public class Alfred {
 				System.err.println("timeout");
 				System.exit(1);
 			}
-			checkTestCase(new File(arg.output), new File(".output"));
+			checkTestCase(new File(arg.output), new File(".out"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -51,7 +52,7 @@ public class Alfred {
 
 	static void checkTestCase(File expectedOutput, File output) throws FileNotFoundException {
 		boolean passed = true;
-
+		
 		expected = new Scanner(expectedOutput);
 		out = new Scanner(output);
 		while (expected.hasNext()) {
@@ -59,7 +60,7 @@ public class Alfred {
 				passed = false;
 				break;
 			}
-			if (!expected.nextLine().equals(out.nextLine())) {
+			if (!expected.nextLine().trim().equals(out.nextLine().trim())) {
 				passed = false;
 				break;
 			}

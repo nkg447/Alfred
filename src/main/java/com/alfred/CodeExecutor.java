@@ -33,7 +33,7 @@ public class CodeExecutor {
 	}
 
 	private OutputInfo exec() throws IOException, InterruptedException {
-		Runtime.getRuntime().exec("touch .output");
+		Runtime.getRuntime().exec("touch .out");
 		String statement = null;
 		if (language.equals("java")) {
 			String classFile = codePath.substring(codePath.lastIndexOf('/') + 1, codePath.lastIndexOf('.'));
@@ -45,7 +45,7 @@ public class CodeExecutor {
 		else if (language.equals("c"))
 			statement = "./a.out";
 
-		return new ProcessRunner().run(this, statement, inputFile, ".output");
+		return new ProcessRunner().run(this, statement, inputFile, ".out");
 
 	}
 
