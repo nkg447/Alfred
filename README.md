@@ -1,5 +1,6 @@
 # Alfred
 Your own butler to run your code against test cases.<br />
+Alfred is a CLI application written in Java.<br />
 <img src="https://vignette1.wikia.nocookie.net/batman/images/2/2c/Batman_TAS_-_Alfred_Pennyworth.jpg/revision/latest?cb=20170629213713" width="100">
 
 ## Download 
