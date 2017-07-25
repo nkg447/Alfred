@@ -9,7 +9,7 @@ First, Install Alfred using the instructions given in [README.md](https://github
 
 For Example - 
 ```
-alfred -c NextNumber.java -i input.txt -o output.txt
+$ alfred -c NextNumber.java -i input.txt -o output.txt
 ```
 will have an output - 
 ```
