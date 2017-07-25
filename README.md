@@ -24,7 +24,7 @@ Import the project to eclipse and perform a maven build operation with "install"
 #### Terminal
 Execute the following commands to build the project.
 ```
-pathToMavenFolder/bin/mvn install
+$ pathToMavenFolder/bin/mvn install
 ```
 Usually the pathToMavenFolder is "/usr/share/maven/".
 
