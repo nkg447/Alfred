@@ -9,30 +9,32 @@ First, Install Alfred using the instructions given in [README.md](https://github
 
 For Example - 
 ```
-$ alfred -c NextNumber.java -i input.txt -o output.txt
+$ alfred -c FlippingMatrix.py -i input -o output 
+```
+The default name of input and output file are "input" and "output".Therefore the below command would also work -
+```
+$ alfred -c FlippingMatrix.py
 ```
 will have an output - 
 ```
-executing -  javac NextNumbers.java
-executing -  java  NextNumbers
-java  NextNumbers exitValue() 0
-time taken 134ms
+executing -  python FlippingMatrix.py
+python FlippingMatrix.py exitValue() 0
+time taken 43ms
 ////////////////
 Testcase Passed
 ////////////////
 
-
-Expected Output - 
--536870912
-largest - 1879048192
-zeros - 29
-smallest - -1
+Input - 
+1
+2
+112 42 83 119
+56 125 56 49
+15 78 101 43
+62 98 114 108
 
 ----------------------------------------------------------
 
 Your Output - 
--536870912
-largest - 1879048192
-zeros - 29
-smallest - -1
+414
+
 ```
