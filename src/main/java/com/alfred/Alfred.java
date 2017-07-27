@@ -18,8 +18,7 @@ class Alfred {
 	public static void main(String[] args) {
 		System.out.println(System.getProperty("user.dir"));
 		Arguments arg = Arguments.getInstance(args);
-		if(args.length==0)
-		{
+		if (args.length == 0) {
 			System.err.println("no argument passed");
 			System.err.println("To see how to use visit the below link");
 			System.err.println("https://github.com/nkg447/Alfred/blob/master/HOW_TO_USE.md");
@@ -44,15 +43,15 @@ class Alfred {
 				System.err.println("timeout");
 				System.exit(1);
 			}
-			checkTestCase(new File(arg.output), new File(".out"));
+			checkTestCase(new File(arg.input), new File(arg.output), new File(".out"));
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
 
-	static void checkTestCase(File expectedOutput, File output) throws FileNotFoundException {
+	static void checkTestCase(File inputFile, File expectedOutput, File output) throws FileNotFoundException {
 		boolean passed = true;
-		
+
 		expected = new Scanner(expectedOutput);
 		out = new Scanner(output);
 		while (expected.hasNext()) {
@@ -71,13 +70,23 @@ class Alfred {
 		else
 			System.out.println("Testcase Failed");
 		System.out.println("////////////////");
-		expected = new Scanner(expectedOutput);
-		out = new Scanner(output);
-		System.out.println("\n\nExpected Output - ");
-		while (expected.hasNext())
-			System.out.println(expected.nextLine());
+		
+		System.out.println("\nInput - ");
+		printData(inputFile);
+
+		if (!passed) {
+			System.out.println("\n\nExpected Output - ");
+			printData(expectedOutput);
+		}
+
 		System.out.println("\n----------------------------------------------------------");
 		System.out.println("\nYour Output - ");
+		printData(output);
+
+	}
+
+	static void printData(File file) throws FileNotFoundException {
+		out = new Scanner(file);
 		while (out.hasNext())
 			System.out.println(out.nextLine());
 	}
