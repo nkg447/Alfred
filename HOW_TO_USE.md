@@ -1,6 +1,6 @@
 # How to use Alfred
 
-First, Install Alfred using the instructions given in [README.md](https://github.com/nkg447/Alfred/blob/master/README.md).
+First, Install Alfred, [click here](https://sourceforge.net/projects/nkg447-alfred/) to download.
 
 *Alfred* is used as a command line tool which takes the following arguments - <br />
 -c , --code [filename] - File name of the source code file.<br />
