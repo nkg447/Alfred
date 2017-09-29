@@ -9,11 +9,15 @@ First, Install Alfred, [click here](https://sourceforge.net/projects/nkg447-alfr
 
 For Example - 
 ```
-$ alfred -c FlippingMatrix.py -i input -o output 
+$ alfred -c pathToTheCodeFile -i pathToInputFile -o pathToOutputFile 
 ```
-The default name of input and output file are "input" and "output".Therefore the below command would also work -
+The default name of input and output file are "input" and "output".Therefore the below command would also work if the input file is named "input" and output file is named "output"-
 ```
 $ alfred -c FlippingMatrix.py
+```
+The command will work the same as - 
+```
+$ alfred -c FlippingMatrix.py -i input -o output
 ```
 will have an output - 
 ```
