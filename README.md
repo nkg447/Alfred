@@ -9,7 +9,8 @@ for linux [click here](https://sourceforge.net/projects/nkg447-alfred/files/Alfr
 for Windows[click here](https://sourceforge.net/projects/nkg447-alfred/files/Alfred-0.0.1-Windows.exe/download)<br/>
 
 ### How To Use : 
-see [HOW_TO_USE.md](https://github.com/nkg447/Alfred/blob/master/HOW_TO_USE.md)
+see [HOW_TO_USE.md](https://github.com/nkg447/Alfred/blob/master/HOW_TO_USE.md)<br/>
+video - https://www.youtube.com/watch?v=fzP9lKlKowA
 
 ## Getting Started
 These instructions will help you get the project up and running on your local machine for development and testing purposes.
