@@ -14,7 +14,7 @@ public class CodeBuilder {
 			statement = "g++ " + info.getFilePath();
 
 		} else if (info.getLanguage().equals("c")) {
-			statement = "gcc " + info.getFilePath();
+			statement = "gcc " + info.getFilePath() + " -lm";
 
 		}
 		else
