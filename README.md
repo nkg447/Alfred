@@ -42,3 +42,6 @@ Usually the pathToMavenFolder is "/usr/share/maven/".
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [JCommander](jcommander.org) - Parse Command Line Parameters
 
+## Why?
+
+¯\\_(ツ)_/¯  (eeh...)
